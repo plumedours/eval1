@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site fictif pour une évaluation en cours de formation.">
+    <meta name="author" content="Maxime Bory">
+    <meta name="keywords" content="HTML, CSS, Bootstrap">
+    <!-- CSS -->
+    <!-- import Bootstrap with CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- import my CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
+    <title>Évènements - Créer un site web avec HTML, CSS et le Framework Bootstrap</title>
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-blue">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo du site" width="60" height="60"></a>
+              <a href="./index.html" class="navbar-brand">AquaFish</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./event.html">Évènements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Les évènements</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h2>Journées portes ouvertes 2022, à l'association, tous les 2ème samedi du mois :</h2>
+                  <ul>
+                    <li>15 Janvier</li>
+                    <li>12 Février</li>
+                    <li>12 Mars</li>
+                    <li>9 Avril</li>
+                    <li>14 Mai</li>
+                    <li>10 Juin</li>
+                    <li>09 Juillet</li>
+                    <li>13 Août</li>
+                    <li>10 Septembre</li>
+                    <li>08 Octobre</li>
+                    <li>12 Novembre</li>
+                    <li>10 Décembre</li>
+                  </ul>
+                </div>
+              </div>
+            <!-- Start Carousel Event -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/1019/300/200" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Sortie plongée St Raphael (83)</h5>
+                      <p>Faites votre baptême de plongée et découvrez la faune sous-marine !</p>
+                      <p class="subtitle">15 et 16 Août, sur réservation.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/1069/300/200" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Sortie aquarium de Monaco</h5>
+                      <p>Venez découvrir ou redécouvrir le musée Océanographique de Monaco.</p>
+                      <p class="subtitle">les Samedi 03, 09 et 19 Juillet.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/135/300/200" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5 class="cancel">ANNULE</h5>
+                      <p>Salon d'échange / vente à Bonneville (74)</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- End Carousel Event -->
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="footer">
+                    <p class="footer-text">Association fictive, inventée pour une évaluation de formation.</p>
+                    <p class="footer-text">Logo : <a href="https://www.flaticon.com/free-icons/aquarium" title="aquarium icons" target="_blank">Aquarium icons created by Freepik - Flaticon</a></p>
+                    <p class="footer-text">Images : <a href="https://picsum.photos/" target="_blank">https://picsum.photos/</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
